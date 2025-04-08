@@ -29,7 +29,7 @@ int isOperand(char c)
 {
     return ('a' <= c && c <= 'z') ||
            ('A' <= c && c <= 'Z') ||
-           ('1' <= c && c <= '9');
+           ('0' <= c && c <= '9');
 }
 
 int isOperator(char c)
@@ -37,7 +37,8 @@ int isOperator(char c)
     return (c == '+') ||
            (c == '-') ||
            (c == '*') ||
-           (c == '/');
+           (c == '/') ||
+           (c == '^');
 }
 
 void postfixToInfix(char * expression, char * infix)
