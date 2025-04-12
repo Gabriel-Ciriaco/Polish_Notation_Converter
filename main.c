@@ -117,11 +117,11 @@ int main()
 
     printf("Write an infix expression: ");
 
-    scanf("%s", &expression);
+    scanf("%s", expression);
 
     char infix[strlen(expression)];
 
-    postfixToInfix(&expression, &infix);
+    postfixToInfix(expression, infix);
 
     printf("Postfix expression: %s", infix);
 
